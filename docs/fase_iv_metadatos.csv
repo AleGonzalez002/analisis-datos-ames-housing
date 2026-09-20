@@ -1,0 +1,102 @@
+variable,tipo_transformacion,rol
+MS SubClass,RobustScaler,predictor numerico
+Lot Frontage,RobustScaler,predictor numerico
+Lot Area,RobustScaler,predictor numerico
+Overall Qual,RobustScaler,predictor numerico
+Overall Cond,RobustScaler,predictor numerico
+Year Built,RobustScaler,predictor numerico
+Year Remod/Add,RobustScaler,predictor numerico
+Mas Vnr Area,RobustScaler,predictor numerico
+BsmtFin SF 1,RobustScaler,predictor numerico
+BsmtFin SF 2,RobustScaler,predictor numerico
+Bsmt Unf SF,RobustScaler,predictor numerico
+Total Bsmt SF,RobustScaler,predictor numerico
+1st Flr SF,RobustScaler,predictor numerico
+2nd Flr SF,RobustScaler,predictor numerico
+Low Qual Fin SF,RobustScaler,predictor numerico
+Gr Liv Area,RobustScaler,predictor numerico
+Bsmt Full Bath,RobustScaler,predictor numerico
+Bsmt Half Bath,RobustScaler,predictor numerico
+Full Bath,RobustScaler,predictor numerico
+Half Bath,RobustScaler,predictor numerico
+Bedroom AbvGr,RobustScaler,predictor numerico
+Kitchen AbvGr,RobustScaler,predictor numerico
+TotRms AbvGrd,RobustScaler,predictor numerico
+Fireplaces,RobustScaler,predictor numerico
+Garage Yr Blt,RobustScaler,predictor numerico
+Garage Cars,RobustScaler,predictor numerico
+Garage Area,RobustScaler,predictor numerico
+Wood Deck SF,RobustScaler,predictor numerico
+Open Porch SF,RobustScaler,predictor numerico
+Enclosed Porch,RobustScaler,predictor numerico
+3Ssn Porch,RobustScaler,predictor numerico
+Screen Porch,RobustScaler,predictor numerico
+Pool Area,RobustScaler,predictor numerico
+Misc Val,RobustScaler,predictor numerico
+Mo Sold,RobustScaler,predictor numerico
+Yr Sold,RobustScaler,predictor numerico
+Month_Sold,RobustScaler,predictor numerico
+Age_At_Sale,RobustScaler,predictor numerico
+Years_Since_Remod,RobustScaler,predictor numerico
+Total_SF,RobustScaler,predictor numerico
+Total_Bathrooms_Equivalent,RobustScaler,predictor numerico
+Total_Porch_SF,RobustScaler,predictor numerico
+Has_Garage,RobustScaler,predictor numerico
+Has_Basement,RobustScaler,predictor numerico
+Has_Pool,RobustScaler,predictor numerico
+Has_2nd_Floor,RobustScaler,predictor numerico
+Exter Qual,OrdinalEncoder con orden explicito,predictor ordinal
+Exter Cond,OrdinalEncoder con orden explicito,predictor ordinal
+Bsmt Qual,OrdinalEncoder con orden explicito,predictor ordinal
+Bsmt Cond,OrdinalEncoder con orden explicito,predictor ordinal
+Bsmt Exposure,OrdinalEncoder con orden explicito,predictor ordinal
+BsmtFin Type 1,OrdinalEncoder con orden explicito,predictor ordinal
+BsmtFin Type 2,OrdinalEncoder con orden explicito,predictor ordinal
+Heating QC,OrdinalEncoder con orden explicito,predictor ordinal
+Kitchen Qual,OrdinalEncoder con orden explicito,predictor ordinal
+Fireplace Qu,OrdinalEncoder con orden explicito,predictor ordinal
+Garage Finish,OrdinalEncoder con orden explicito,predictor ordinal
+Garage Qual,OrdinalEncoder con orden explicito,predictor ordinal
+Garage Cond,OrdinalEncoder con orden explicito,predictor ordinal
+Pool QC,OrdinalEncoder con orden explicito,predictor ordinal
+Functional,OrdinalEncoder con orden explicito,predictor ordinal
+Land Slope,OrdinalEncoder con orden explicito,predictor ordinal
+Paved Drive,OrdinalEncoder con orden explicito,predictor ordinal
+Alley,OneHotEncoder drop=first,predictor nominal
+Bldg Type,OneHotEncoder drop=first,predictor nominal
+Central Air,OneHotEncoder drop=first,predictor nominal
+Condition 1,OneHotEncoder drop=first,predictor nominal
+Condition 2,OneHotEncoder drop=first,predictor nominal
+Electrical,OneHotEncoder drop=first,predictor nominal
+Exterior 1st,OneHotEncoder drop=first,predictor nominal
+Exterior 2nd,OneHotEncoder drop=first,predictor nominal
+Fence,OneHotEncoder drop=first,predictor nominal
+Foundation,OneHotEncoder drop=first,predictor nominal
+Garage Type,OneHotEncoder drop=first,predictor nominal
+Heating,OneHotEncoder drop=first,predictor nominal
+House Style,OneHotEncoder drop=first,predictor nominal
+Land Contour,OneHotEncoder drop=first,predictor nominal
+Lot Config,OneHotEncoder drop=first,predictor nominal
+Lot Shape,OneHotEncoder drop=first,predictor nominal
+MS Zoning,OneHotEncoder drop=first,predictor nominal
+Mas Vnr Type,OneHotEncoder drop=first,predictor nominal
+Misc Feature,OneHotEncoder drop=first,predictor nominal
+Neighborhood,OneHotEncoder drop=first,predictor nominal
+Roof Matl,OneHotEncoder drop=first,predictor nominal
+Roof Style,OneHotEncoder drop=first,predictor nominal
+Sale Condition,OneHotEncoder drop=first,predictor nominal
+Sale Type,OneHotEncoder drop=first,predictor nominal
+Street,OneHotEncoder drop=first,predictor nominal
+Utilities,OneHotEncoder drop=first,predictor nominal
+Month_Sold,variable derivada,predictor derivado
+Age_At_Sale,variable derivada,predictor derivado
+Years_Since_Remod,variable derivada,predictor derivado
+Total_SF,variable derivada,predictor derivado
+Total_Bathrooms_Equivalent,variable derivada,predictor derivado
+Total_Porch_SF,variable derivada,predictor derivado
+Has_Garage,variable derivada,predictor derivado
+Has_Basement,variable derivada,predictor derivado
+Has_Pool,variable derivada,predictor derivado
+Has_2nd_Floor,variable derivada,predictor derivado
+SalePrice_per_GrLivArea,variable derivada no usada en X,descriptiva
+SalePrice,sin escalar,objetivo
