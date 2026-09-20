@@ -1,0 +1,9 @@
+index,antes,despues
+filas,2930.0,2925.0
+columnas,82.0,82.0
+celdas_nulas,15749.0,0.0
+pct_celdas_nulas,6.555,0.0
+columnas_con_nulos,27.0,0.0
+duplicados_exactos,0.0,0.0
+variables_numericas,39.0,39.0
+variables_no_numericas,43.0,43.0

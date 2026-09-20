@@ -1,0 +1,34 @@
+bloque,variable,problema,metodo,filas_afectadas,justificacion
+Nulos,Garage Type,Tipo de garaje declarado sin superficie ni capacidad asociada,Reclasificado como ausencia de garaje,1,Inconsistencia interna: un garaje sin area ni capacidad no existe fisicamente
+Nulos,Pool QC,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",2917,Verificado contra variable testigo: coincidencia 100%
+Nulos,Misc Feature,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",2824,Verificado contra variable testigo: coincidencia 100%
+Nulos,Alley,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",2732,Verificado contra variable testigo: coincidencia 100%
+Nulos,Fence,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",2358,Verificado contra variable testigo: coincidencia 100%
+Nulos,Fireplace Qu,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",1422,Verificado contra variable testigo: coincidencia 100%
+Nulos,Garage Type,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",158,Verificado contra variable testigo: coincidencia 100%
+Nulos,Garage Finish,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",159,Verificado contra variable testigo: coincidencia 100%
+Nulos,Garage Qual,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",159,Verificado contra variable testigo: coincidencia 100%
+Nulos,Garage Cond,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",159,Verificado contra variable testigo: coincidencia 100%
+Nulos,Bsmt Qual,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",80,Verificado contra variable testigo: coincidencia 100%
+Nulos,Bsmt Cond,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",80,Verificado contra variable testigo: coincidencia 100%
+Nulos,Bsmt Exposure,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",83,Verificado contra variable testigo: coincidencia 100%
+Nulos,BsmtFin Type 1,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",80,Verificado contra variable testigo: coincidencia 100%
+Nulos,BsmtFin Type 2,NaN por ausencia del atributo (no dato perdido),"Codificado como categoria ""Ninguno""",81,Verificado contra variable testigo: coincidencia 100%
+Nulos,Garage Area,NaN por ausencia de la estructura fisica,Imputado con 0,1,"Ausencia de sotano/garaje implica superficie nula, no valor desconocido"
+Nulos,Garage Cars,NaN por ausencia de la estructura fisica,Imputado con 0,1,"Ausencia de sotano/garaje implica superficie nula, no valor desconocido"
+Nulos,Total Bsmt SF,NaN por ausencia de la estructura fisica,Imputado con 0,1,"Ausencia de sotano/garaje implica superficie nula, no valor desconocido"
+Nulos,Bsmt Unf SF,NaN por ausencia de la estructura fisica,Imputado con 0,1,"Ausencia de sotano/garaje implica superficie nula, no valor desconocido"
+Nulos,BsmtFin SF 1,NaN por ausencia de la estructura fisica,Imputado con 0,1,"Ausencia de sotano/garaje implica superficie nula, no valor desconocido"
+Nulos,BsmtFin SF 2,NaN por ausencia de la estructura fisica,Imputado con 0,1,"Ausencia de sotano/garaje implica superficie nula, no valor desconocido"
+Nulos,Bsmt Full Bath,NaN por ausencia de la estructura fisica,Imputado con 0,2,"Ausencia de sotano/garaje implica superficie nula, no valor desconocido"
+Nulos,Bsmt Half Bath,NaN por ausencia de la estructura fisica,Imputado con 0,2,"Ausencia de sotano/garaje implica superficie nula, no valor desconocido"
+Nulos,Mas Vnr Type / Mas Vnr Area,NaN por ausencia de revestimiento de mamposteria,"Tipo = ""Ninguno"", area = 0",1768,Area nula o cero confirma ausencia del atributo
+Nulos,Lot Frontage,Dato perdido real (16.72% de la muestra),Mediana por Neighborhood (respaldo: mediana global),490,El frente de lote esta determinado por el trazado del barrio; la mediana global sobreestima barrios densos
+Nulos,Garage Yr Blt,Sin garaje o ano no registrado,Imputado con Year Built,159,El garaje se construye junto a la vivienda salvo remodelacion; evita introducir el valor 0 como ano
+Nulos,Mas Vnr Type,Area de revestimiento > 0 pero tipo no registrado,Imputado con la moda,7,El area confirma la existencia del revestimiento; solo falta la clasificacion
+Nulos,Electrical,Dato perdido puntual,Imputado con la moda (SBrkr),1,Un solo caso (0.03%); la moda concentra mas del 90% de las observaciones
+Errores de captura,Garage Yr Blt,Ano posterior al ultimo ano de venta registrado (2010),Corregido al ano de venta de la vivienda,1,Error de digitacion (2207 por 2007); la vivienda se construyo en 2006
+Estandarizacion,Sale Type,Espacios en blanco al inicio o final del valor,Aplicado strip(),2536,"Evita que ""WD "" y ""WD"" se traten como categorias distintas en el encoding"
+Duplicados,dataset completo,"Verificacion en tres niveles (exacto, por PID, parcial sin identificadores)",Sin accion requerida,0,Order y PID son unicos por construccion; evaluar solo filas completas ocultaria repeticiones reales
+Outliers,Gr Liv Area,Viviendas con superficie habitable > 4000 sqft,Eliminacion por criterio de dominio,5,De Cock (2011) las documenta como atipicas; incluyen ventas parciales cuyo precio no refleja el valor de mercado
+Outliers,resto de variables continuas,Valores extremos detectados por IQR y Z-score,Conservados sin modificacion,0,Corresponden a variacion real del mercado inmobiliario; la asimetria se atendera con el escalador en Fase IV

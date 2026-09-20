@@ -1,0 +1,28 @@
+variable,nulos,pct,dtype
+Pool QC,2917,99.56,str
+Misc Feature,2824,96.38,str
+Alley,2732,93.24,str
+Fence,2358,80.48,str
+Mas Vnr Type,1775,60.58,str
+Fireplace Qu,1422,48.53,str
+Lot Frontage,490,16.72,float64
+Garage Qual,159,5.43,str
+Garage Cond,159,5.43,str
+Garage Yr Blt,159,5.43,float64
+Garage Finish,159,5.43,str
+Garage Type,157,5.36,str
+Bsmt Exposure,83,2.83,str
+BsmtFin Type 2,81,2.76,str
+Bsmt Cond,80,2.73,str
+Bsmt Qual,80,2.73,str
+BsmtFin Type 1,80,2.73,str
+Mas Vnr Area,23,0.78,float64
+Bsmt Full Bath,2,0.07,float64
+Bsmt Half Bath,2,0.07,float64
+BsmtFin SF 1,1,0.03,float64
+BsmtFin SF 2,1,0.03,float64
+Electrical,1,0.03,str
+Total Bsmt SF,1,0.03,float64
+Bsmt Unf SF,1,0.03,float64
+Garage Area,1,0.03,float64
+Garage Cars,1,0.03,float64

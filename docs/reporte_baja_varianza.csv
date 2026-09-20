@@ -1,0 +1,14 @@
+variable,valor_dominante,concentracion_%,categorias_distintas
+Utilities,AllPub,99.9,3
+Pool Area,0,99.62,12
+Pool QC,Ninguno,99.62,5
+Street,Pave,99.59,2
+Condition 2,Norm,99.01,8
+3Ssn Porch,0,98.74,31
+Low Qual Fin SF,0,98.63,36
+Roof Matl,CompShg,98.6,7
+Heating,GasA,98.46,6
+Misc Val,0,96.51,37
+Misc Feature,Ninguno,96.41,5
+Kitchen AbvGr,1,95.42,4
+Land Slope,Gtl,95.18,3
