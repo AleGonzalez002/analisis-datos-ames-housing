@@ -6,7 +6,18 @@ Universidad Evangélica de El Salvador
 Entregable 2.2: aplicación analítica interactiva conectada a la data depurada en la Fase I
 (2,925 observaciones · 82 variables · sin valores nulos).
 
----
+## Dashboard interactivo — Versión pública
+
+La aplicación está desplegada en Streamlit Community Cloud y permite
+explorar interactivamente el mercado residencial de Ames, Iowa.
+
+**Acceso al dashboard:**
+https://ames-housing-grupo10.streamlit.app
+
+**Configuración del despliegue:**
+- Repositorio: Juanjo-devfx/analisis-datos-ames-housing
+- Rama: feature/dashboard-interactivo
+- Archivo principal: dashboard/app.py
 
 ## Ejecutar en local
 
